@@ -1,0 +1,18 @@
+.NavBar {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 20px;
+  }
+
+  .NavBar-link {
+    margin: 0 10px;
+    color: red;
+  }
+  
+  .NavBar-welcome {
+    color: red;
+  }
+
+  .NavBar-box {
+      color: blue;
+  }
