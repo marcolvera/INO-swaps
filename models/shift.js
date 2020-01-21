@@ -3,8 +3,10 @@ var Schema = mongoose.Schema;
 
 
 const shiftSchema = new mongoose.Schema({
-    Date: Date,
-    Time: String
-  }) 
+    date: String,
+    time: String,
+    comment: String,
+    owner: String
+}) 
 
   module.exports = mongoose.model('Shift', shiftSchema);

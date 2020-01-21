@@ -10,7 +10,10 @@ const Homepage = props => {
             user={props.user}
             handleLogout={props.handleLogout}
             />
-            <ShowPage user={props.user} />
+            <ShowPage 
+            user={props.user} 
+            shifts={props.shifts}
+            />
         </div>
     )
 }

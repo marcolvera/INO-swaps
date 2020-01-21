@@ -21,7 +21,7 @@ async function show(req, res) {
 
 
 async function create(req ,res) {
-    const shift = await Shift.create(req.body);
+    const shift = await Shift.create(req.body); 
     res.status(201).json(shift);
 }
 

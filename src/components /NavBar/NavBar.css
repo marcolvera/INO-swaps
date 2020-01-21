@@ -6,13 +6,18 @@
 
   .NavBar-link {
     margin: 0 10px;
-    color: red;
+    color: rgb(206, 33, 33);
   }
   
   .NavBar-welcome {
-    color: red;
+    color: rgb(206, 33, 33);
   }
 
   .NavBar-box {
-      color: blue;
+    color: rgb(206, 33, 33);
+  }
+
+  .navLine {
+    width: 83%;
+    border: .1rem solid rgb(206, 33, 33) ;
   }

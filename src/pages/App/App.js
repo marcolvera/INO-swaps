@@ -22,9 +22,10 @@ class App extends Component {
   handlePostShift = async newShiftData => {
     const newShift = await shiftAPI.create(newShiftData);
     this.setState(state => ({
-      shifts: [...this.state.shifts, newShift]
+      shifts: [...state.shifts, newShift]
     }),
     () => this.props.history.push('/'));
+    console.log(newShift)
   }
 
 
@@ -41,6 +42,17 @@ class App extends Component {
   }
 
 
+
+    /*--- Lifecycle Methods ---*/
+
+  async componentDidMount() {
+      const shifts = await shiftAPI.getAll();
+      this.setState({shifts});
+      console.log(shifts)
+    }
+
+
+
   render() {
     return (
       <div>
@@ -49,6 +61,7 @@ class App extends Component {
         <Homepage 
               handleLogout={this.handleLogout}
               user={this.state.user}
+              shifts={this.state.shifts}
         />
         }/>
         <Route exact path='/signup' render={({ history }) => 
@@ -66,6 +79,7 @@ class App extends Component {
           <Route exact path='/post' render={() => 
             <PostShiftPage
               handlePostShift={this.handlePostShift}
+              user={this.state.user}
                 />
           }/>
       </Switch>

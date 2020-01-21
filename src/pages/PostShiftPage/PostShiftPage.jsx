@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './PostShiftPage.css'
 import { Link } from 'react-router-dom';
+import userService from '../../utils/userService';
 
 class PostShiftPage extends Component {
     state = {
@@ -8,6 +9,9 @@ class PostShiftPage extends Component {
       formData: {
         date: '',
         time: '',
+        comment: '',
+        owner: userService.getUser()
+       
       }
     };
   
@@ -28,13 +32,15 @@ class PostShiftPage extends Component {
   
     render() {
       return (
+        <div>
+        <h1 className="infoBox">Shift Information</h1>
         <div className="postContainer">
-          <h1>Shift Information</h1>
           <form ref={this.formRef} autoComplete="off" onSubmit={this.handleSubmit}>
             <div className="form-group">
               <label>Shift Date:</label>
               <input
                 className="form-control"
+                type="date"
                 name="date"
                 value={this.state.formData.date}
                 onChange={this.handleChange}
@@ -45,12 +51,23 @@ class PostShiftPage extends Component {
               <label>Shift Time:</label>
               <input
                 className="form-control"
+                
                 name="time"
-                value={this.state.formData.breed}
+                value={this.state.formData.time}
                 onChange={this.handleChange}
                 required
               />
             </div>
+            <div className="form-group">
+            <label>Comment:</label>
+            <textarea
+              className="form-control"
+              name="comment"
+              value={this.state.formData.comment}
+              onChange={this.handleChange}
+            />
+          </div>
+
             <button
               type="submit"
               className="btn"
@@ -60,6 +77,7 @@ class PostShiftPage extends Component {
             </button> 
           </form>
             <button><Link to='/'>Cancel</Link></button>
+        </div>
         </div>
       );
     }

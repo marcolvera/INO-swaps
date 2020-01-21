@@ -1,4 +1,14 @@
 .postContainer {
     text-align: center;
+}
+
+.infoBox {
+    background-color: rgb(206, 33, 33);
+    margin-top: 0;
     color: white;
-   }
+    text-align: center;
+}
+
+.form-group {
+    margin: 
+}
