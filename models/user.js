@@ -2,10 +2,11 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const SALT_ROUNDS = 6;
 
+
 const userSchema = new mongoose.Schema({
   name: String,
   email: {type: String, required: true, lowercase: true, unique: true},
-  password: String
+  password: String,
 }, {
   timestamps: true
 });
@@ -31,5 +32,7 @@ userSchema.pre('save', function(next) {
 userSchema.methods.comparePassword = function(tryPassword, cb) {
   bcrypt.compare(tryPassword, this.password, cb);
 }
+
+
 
 module.exports = mongoose.model('User', userSchema);

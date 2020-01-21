@@ -10,6 +10,10 @@ require('dotenv').config();
 require('./config/database');
 
 
+// Route for shifts that will have CRUD 
+var shiftsRouter = require('./routes/api/shifts');
+
+
 app.use(logger('dev'));
 app.use(express.json());
 
@@ -23,6 +27,7 @@ app.use(express.static(path.join(__dirname, 'build')));
 // Put API routes here, before the "catch all" route
 app.use('/api/users', require('./routes/api/users'));
 app.use(require('./config/auth'));
+app.use('/api/shifts', shiftsRouter);
 
 // The following "catch all" route (note the *)is necessary
 // for a SPA's client-side routing to properly work

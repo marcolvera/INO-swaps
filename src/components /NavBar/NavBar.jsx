@@ -5,7 +5,7 @@ import './NavBar.css';
 const NavBar = (props) => {
   let nav = props.user ?
     <div>
-      <Link to='' className='NavBar-link'>Profile</Link>
+      <Link to='post' className='NavBar-link'>POST</Link>
       &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
       <Link to=''
         className='NavBar-link'
