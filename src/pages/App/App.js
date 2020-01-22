@@ -6,7 +6,9 @@ import Homepage from '../Homepage/Homepage'
 import SignupPage from '../SignupPage/SignupPage'
 import LoginPage from '../LoginPage/LoginPage'
 import PostShiftPage from '../PostShiftPage/PostShiftPage'
+import ProfilePage from '../ProfilePage/ProfilePage'
 import userService from '../../utils/userService';
+
 
 
 class App extends Component {
@@ -28,6 +30,13 @@ class App extends Component {
     console.log(newShift)
   }
 
+
+  handleDeleteShift = async id => {
+    await shiftAPI.deleteOne(id);
+      this.setState(state => ({
+        shifts: state.shifts.filter(s => s._id)
+      }), () => this.props.history.push('/'));
+  }
 
 
 
@@ -56,12 +65,15 @@ class App extends Component {
   render() {
     return (
       <div>
+        
          <Switch>
+
         <Route exact path='/' render={() =>
         <Homepage 
               handleLogout={this.handleLogout}
               user={this.state.user}
               shifts={this.state.shifts}
+              handleDeleteShift={this.handleDeleteShift}
         />
         }/>
         <Route exact path='/signup' render={({ history }) => 
@@ -82,11 +94,18 @@ class App extends Component {
               user={this.state.user}
                 />
           }/>
-      </Switch>
-      </div>
-    )
-  }
+          <Route exact path='/profile' render={() => 
+            <ProfilePage
+            user={this.state.user}
+            shifts={this.state.shifts}
+              />
+        }/>
+    </Switch>
+    </div>
+  )
 }
+}
+            
 
 
 export default App;

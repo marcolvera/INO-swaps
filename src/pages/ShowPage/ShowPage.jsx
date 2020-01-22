@@ -10,6 +10,7 @@ import './ShowPage.css'
 
 const ShowPage = props => {
     const shiftRows = props.shifts.map(shift =>(
+    <div className="spacingContainer">
     <div className="tableContainer">
         <table>
         <thead>
@@ -24,9 +25,12 @@ const ShowPage = props => {
                 <td>{shift.date}</td>
                 <td>{shift.time}</td>
                 <td>{shift.comment}</td>
+                
             </tr>
         </tbody>
         </table>
+        {/* <button className="delButton">hello</button> */}
+    </div>
     </div>
 
     // <div className="shiftBox">

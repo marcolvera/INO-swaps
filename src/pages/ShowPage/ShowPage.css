@@ -39,18 +39,40 @@ table {
 
  td {
     padding: 3rem;
-    color: white;
+    color: red;
+    text-shadow: .5px .5px black;
+    font-weight: bold;
+
     
 }
 
 
+
+
 .tableContainer {
-    background-color: rgb(206, 33, 33);
-    margin: 1rem;
+    /* background-color: rgb(206, 33, 33); */
+    background-color: whitesmoke;
+    margin: 0 auto;
     border-radius: 1rem;
     box-shadow: 1px 3px 3px black;
+    width: 78%;
    
 }
+
+.delButton {
+    background-color: rgb(206, 33, 33);
+    color: white;
+    width: 4rem;
+    height: 1.5rem;
+    border-radius: .2rem;
+}
+
+.spacingContainer {
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+
 
 
 /* .shiftBox {

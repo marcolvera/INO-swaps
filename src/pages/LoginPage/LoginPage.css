@@ -5,3 +5,22 @@
     align-items: center;
     margin-bottom: 50px;
   }
+
+  .form-control {
+    width: 15rem;
+    height: 1.5rem;
+    margin: .2rem;
+    border-radius: .3rem;
+  }
+
+  .btn {
+    width: 5em;
+  }
+
+  .header-footer {
+    margin-top: 7rem;
+    color: rgb(206, 33, 33);
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: 'Indie Flower', cursive;
+  }

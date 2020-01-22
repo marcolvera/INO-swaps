@@ -76,7 +76,7 @@ class PostShiftPage extends Component {
               Post Shift
             </button> 
           </form>
-            <button><Link to='/'>Cancel</Link></button>
+            <button><Link to='/home'>Cancel</Link></button>
         </div>
         </div>
       );

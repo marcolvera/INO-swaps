@@ -1,0 +1,15 @@
+.buttonDiv {
+    background-color: rgb(206, 33, 33);
+    height: 2.5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.link {
+    margin: 1rem;
+    color: white;
+}
+
+.postDiv {
+    margin: 3rem;
+}

@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import NavBar from '../../components /NavBar/NavBar';
 import ShowPage from '../ShowPage/ShowPage'
+
 
 const Homepage = props => {
     return (
@@ -13,10 +13,12 @@ const Homepage = props => {
             <ShowPage 
             user={props.user} 
             shifts={props.shifts}
+            handleDelete={props.handleDelete}
             />
         </div>
     )
 }
+            
             
         
 
