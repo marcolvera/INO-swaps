@@ -31,12 +31,15 @@ class App extends Component {
   }
 
 
-  handleDeleteShift = async id => {
+
+
+  handleDeleteShift=  async id => {
     await shiftAPI.deleteOne(id);
-      this.setState(state => ({
-        shifts: state.shifts.filter(s => s._id)
-      }), () => this.props.history.push('/'));
+    this.setState(state => ({
+      shifts: state.shifts.filter(s => s._id !== id)
+    }), () => this.props.history.push('/'));
   }
+      
 
 
 
@@ -98,6 +101,8 @@ class App extends Component {
             <ProfilePage
             user={this.state.user}
             shifts={this.state.shifts}
+            handleDeleteShift={this.handleDeleteShift}  
+            
               />
         }/>
     </Switch>

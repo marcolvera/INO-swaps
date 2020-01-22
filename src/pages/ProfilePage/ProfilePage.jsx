@@ -7,6 +7,7 @@ import './ProfilePage.css';
 const ProfilePage = props => {
     const filterPost = props.shifts.filter(shift => shift.owner.includes(props.user._id)).map(shift => (
         <div className="tableContainer">
+                <button onClick={() => props.handleDeleteShift(shift._id)}>Delete</button>
                  <table>
                  <thead>
                  <tr>
@@ -30,8 +31,9 @@ const ProfilePage = props => {
   
       return ( 
         <div>
-            <div><Link to="/">Home</Link></div>
-            <div>{filterPost}</div>
+            <div className="linkDiv"><Link className="link" to="/">Home</Link></div>
+            <h1 className="post">Your Posts</h1>
+            <div className="postDiv">{filterPost}</div>
         </div>
       )}
   

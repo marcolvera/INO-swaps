@@ -6,7 +6,7 @@ var shiftsController = require('../../controllers/shifts');
 router.get('/', shiftsController.index);
 router.get('/:id', shiftsController.show);
 router.post('/', shiftsController.create);
-router.post('/:id', shiftsController.delete);
+router.delete('/:id', shiftsController.delete);
 
 
 module.exports = router;
