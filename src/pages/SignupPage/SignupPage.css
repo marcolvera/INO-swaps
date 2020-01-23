@@ -5,3 +5,13 @@
     align-items: center;
     margin-bottom: 50px;
   }
+
+  .signBtn {
+    width: 7rem;
+    background-color: rgb(206, 33, 33);
+    border-radius: .2rem;
+  }
+
+  .signLink {
+    color: white;
+  }

@@ -8,6 +8,7 @@ import LoginPage from '../LoginPage/LoginPage'
 import PostShiftPage from '../PostShiftPage/PostShiftPage'
 import ProfilePage from '../ProfilePage/ProfilePage'
 import userService from '../../utils/userService';
+import GreetingsPage from '../GreetingsPage/GreetingsPage';
 
 
 
@@ -26,7 +27,7 @@ class App extends Component {
     this.setState(state => ({
       shifts: [...state.shifts, newShift]
     }),
-    () => this.props.history.push('/'));
+    () => this.props.history.push('/home'));
     console.log(newShift)
   }
 
@@ -37,7 +38,7 @@ class App extends Component {
     await shiftAPI.deleteOne(id);
     this.setState(state => ({
       shifts: state.shifts.filter(s => s._id !== id)
-    }), () => this.props.history.push('/'));
+    }), () => this.props.history.push('/home'));
   }
       
 
@@ -72,7 +73,11 @@ class App extends Component {
          <Switch>
 
         <Route exact path='/' render={() =>
-        <Homepage 
+          <GreetingsPage />
+        }/>
+
+        <Route exact path='/home' render={() =>
+          <Homepage 
               handleLogout={this.handleLogout}
               user={this.state.user}
               shifts={this.state.shifts}

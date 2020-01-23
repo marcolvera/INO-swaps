@@ -9,3 +9,12 @@
     text-align: center;
 }
 
+.cancelBtn {
+    width: 7rem;
+    background-color: rgb(206, 33, 33);
+    border-radius: .2rem;
+}
+
+.cancel {
+    color: white;
+}

@@ -26,7 +26,7 @@ class SignupForm extends Component {
       // Let <App> know a user has signed up!
       this.props.handleSignupOrLogin();
       // Successfully signed up - show GamePage
-      this.props.history.push('/');
+      this.props.history.push('/home');
     } catch (err) {
       // Invalid user data (probably duplicate email)
       this.props.updateMessage(err.message);
@@ -64,8 +64,8 @@ class SignupForm extends Component {
           </div>
           <div className="form-group">
             <div className="col-sm-12 text-center">
-              <button className="btn btn-default" disabled={this.isFormInvalid()}>Sign Up</button>&nbsp;&nbsp;
-              <Link to='/ '>Cancel</Link>
+              <button className="btn btn-default" disabled={this.isFormInvalid()}>Sign Up</button>
+              <button className="signBtn"><Link className="signLink" to='/'>Cancel</Link></button>
             </div>
           </div>
         </form>

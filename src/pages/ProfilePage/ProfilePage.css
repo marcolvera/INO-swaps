@@ -17,3 +17,11 @@
 .post {
     margin: 4rem;
 }
+
+.delButton {
+    color: white;
+    background-color: rgb(206, 33, 33);
+    width: 4rem;
+    height: 2.5rem;
+    border-radius: .5rem;
+}

@@ -69,6 +69,7 @@ class PostShiftPage extends Component {
           </div>
 
             <button
+              className="shiftButton"
               type="submit"
               className="btn"
               disabled={this.state.invalidForm}
@@ -76,7 +77,7 @@ class PostShiftPage extends Component {
               Post Shift
             </button> 
           </form>
-            <button><Link to='/home'>Cancel</Link></button>
+            <button className='cancelBtn'><Link className="cancel" to='/home'>Cancel</Link></button>
         </div>
         </div>
       );

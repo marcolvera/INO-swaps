@@ -14,7 +14,18 @@
   }
 
   .btn {
-    width: 5em;
+    width: 10em;
+    
+  }
+
+  .logCancel {
+    background-color: rgb(206, 33, 33);
+    width: 7rem;
+    border-radius: .2rem;
+  }
+
+  .logLink {
+    color: white;
   }
 
   .header-footer {
