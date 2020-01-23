@@ -10,28 +10,28 @@ import './ShowPage.css'
 
 const ShowPage = props => {
     const shiftRows = props.shifts.map(shift =>(
-    <div className="spacingContainer">
-    <div className="tableContainer">
-        <table>
-        <thead>
+        <div className="spacingContainer">
+    {/* <div className="tableContainer"> */}
+                <table>
+        
             <tr>
                 <th>Date:</th>
                 <th>Time:</th>
-                <th>Comment:</th>
+                <th>Level:</th>
             </tr>
-        </thead>
-        <tbody>
+    
+        
             <tr>
                 <td>{shift.date}</td>
                 <td>{shift.time}</td>
-                <td>{shift.comment}</td>
+                <td>{shift.level}</td>
                 
             </tr>
-        </tbody>
+        
         </table>
       
-    </div>
-    </div>
+     {/* </div> */}
+    </div> 
 
 
       

@@ -5,7 +5,7 @@ var Schema = mongoose.Schema;
 const shiftSchema = new mongoose.Schema({
     date: String,
     time: String,
-    comment: String,
+    level: String,
     owner: String
 }) 
 

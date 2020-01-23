@@ -17,14 +17,14 @@ const ProfilePage = props => {
                  <tr>
                          <th>Date:</th>
                          <th>Time:</th>
-                         <th>Comment:</th>
+                         <th>Level:</th>
                      </tr>
                  </thead>
                  <tbody>
                      <tr>
                          <td>{shift.date}</td>
                          <td>{shift.time}</td>
-                         <td>{shift.comment}</td>
+                         <td>{shift.level}</td>
                         
                      </tr>
                  </tbody>

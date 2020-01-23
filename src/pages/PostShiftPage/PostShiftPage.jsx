@@ -9,7 +9,7 @@ class PostShiftPage extends Component {
       formData: {
         date: '',
         time: '',
-        comment: '',
+        level: '',
         owner: userService.getUser()
        
       }
@@ -51,7 +51,7 @@ class PostShiftPage extends Component {
               <label>Shift Time:</label>
               <input
                 className="form-control"
-                
+                type='time'
                 name="time"
                 value={this.state.formData.time}
                 onChange={this.handleChange}
@@ -59,11 +59,12 @@ class PostShiftPage extends Component {
               />
             </div>
             <div className="form-group">
-            <label>Comment:</label>
-            <textarea
+            <label>Level:</label>
+            <input
+              type="number"
               className="form-control"
-              name="comment"
-              value={this.state.formData.comment}
+              name="level"
+              value={this.state.formData.level}
               onChange={this.handleChange}
             />
           </div>
