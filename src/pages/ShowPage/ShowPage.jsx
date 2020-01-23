@@ -29,14 +29,11 @@ const ShowPage = props => {
             </tr>
         </tbody>
         </table>
-        {/* <button className="delButton">hello</button> */}
+      
     </div>
     </div>
 
-    // <div className="shiftBox">
-    //     <h3>{shift.date}</h3>
-    //     <h3>{shift.time}</h3>
-    // </div>
+
       
     ));
     let showPage = props.user ?
@@ -49,6 +46,7 @@ const ShowPage = props => {
         </div> 
         {props.shifts.length <= 0 &&
         <h2 className="noShiftText">No shifts currently at this time</h2>} 
+        
         {props.shifts.length > 0 &&
         <div>{shiftRows}</div>}
         </div>

@@ -48,10 +48,10 @@ class LoginPage extends Component {
           <div className="form-group">
             <div className="col-sm-12 text-center">
               <button className="btn btn-default">Log In</button>&nbsp;&nbsp;&nbsp;
+              <Link className="logLink" to='/'>Cancel</Link>
             </div>
           </div>
         </form>
-          <button className="logCancel"><Link className="logLink" to='/'>Cancel</Link></button>
       </div>
     );
   }

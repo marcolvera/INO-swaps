@@ -4,7 +4,8 @@ module.exports = {
     index,
     show,
     create,
-    delete: deleteShift
+    delete: deleteShift, 
+    update
 };
 
 
@@ -31,3 +32,8 @@ async function deleteShift(req, res) {
     res.status(201).json(shift);
 }
 
+
+async function update(req, res) {
+    const updatedShift = await Shift.findByIdAndUpdate(req.params.id, req.body, {new: true});
+    res.status(200).json(updatedShift);
+  }

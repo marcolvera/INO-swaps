@@ -16,5 +16,6 @@
 }
 
 .cancel {
-    color: white;
+    color: rgb(206, 33, 33);
+    margin-left: .2rem;
 }

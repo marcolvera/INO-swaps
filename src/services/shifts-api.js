@@ -21,3 +21,11 @@ export function deleteOne(id) {
         method: 'DELETE'
     }).then(res => res.json());
 }
+
+export function update(shift) {
+    return fetch(`${BASE_URL}/${shift._id}`, {
+      method: 'PUT',
+      headers: {'content-type': 'application/json'},
+      body: JSON.stringify(shift)
+    }).then(res => res.json());
+  }

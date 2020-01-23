@@ -9,6 +9,7 @@ import PostShiftPage from '../PostShiftPage/PostShiftPage'
 import ProfilePage from '../ProfilePage/ProfilePage'
 import userService from '../../utils/userService';
 import GreetingsPage from '../GreetingsPage/GreetingsPage';
+import EditShiftPage from '../EditShiftPage/EditShiftPage'
 
 
 
@@ -38,7 +39,18 @@ class App extends Component {
     await shiftAPI.deleteOne(id);
     this.setState(state => ({
       shifts: state.shifts.filter(s => s._id !== id)
-    }), () => this.props.history.push('/home'));
+    }), () => this.props.history.push('/profile'));
+  }
+
+  handleUpdateShift = async updatedShiftData => {
+    const updatedShift = await shiftAPI.update(updatedShiftData);
+    const newShiftsArray = this.state.shifts.map(s => 
+      s._id === updatedShift._id ? updatedShift : s
+    );
+    this.setState(
+      {shifts: newShiftsArray},
+      () => this.props.history.push('/home')
+    );
   }
       
 
@@ -109,7 +121,13 @@ class App extends Component {
             handleDeleteShift={this.handleDeleteShift}  
             
               />
-        }/>
+          }/>
+            <Route exact path='/edit' render={() => 
+            <EditShiftPage
+              handleUpdateShift={this.handleUpdateShift}
+              
+            />
+          } />
     </Switch>
     </div>
   )

@@ -22,6 +22,12 @@
     color: white;
     background-color: rgb(206, 33, 33);
     width: 4rem;
-    height: 2.5rem;
+    height: 1.5rem;
     border-radius: .5rem;
+    margin-top: .5rem;
+    margin-left: .4rem;
+}
+
+.spaceBox {
+    margin-top: 2rem;
 }
