@@ -49,7 +49,7 @@ class App extends Component {
     );
     this.setState(
       {shifts: newShiftsArray},
-      () => this.props.history.push('/home')
+      () => this.props.history.push('/profile')
     );
   }
       
@@ -119,12 +119,15 @@ class App extends Component {
             user={this.state.user}
             shifts={this.state.shifts}
             handleDeleteShift={this.handleDeleteShift}  
+            handleUpdateShift={this.handleUpdateShift}
             
               />
           }/>
-            <Route exact path='/edit' render={() => 
+            <Route exact path='/edit' render={({location}) => 
             <EditShiftPage
               handleUpdateShift={this.handleUpdateShift}
+              location={location}
+              // state={shift}
               
             />
           } />

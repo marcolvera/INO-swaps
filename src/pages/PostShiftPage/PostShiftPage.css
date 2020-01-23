@@ -1,12 +1,14 @@
 .postContainer {
     text-align: center;
+    /* margin-top: 8rem; */
 }
 
 .infoBox {
-    background-color: rgb(206, 33, 33);
+    background-color: #ED2237;
     margin-top: 0;
     color: white;
     text-align: center;
+    box-shadow: 2px 2px 2px grey
 }
 
 .cancelBtn {

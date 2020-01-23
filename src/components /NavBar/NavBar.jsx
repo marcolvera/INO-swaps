@@ -20,6 +20,7 @@ const NavBar = (props) => {
     :
     
     <div className='NavBar-box'>
+      {/* <img className="logo" src="https://i.imgur.com/XEXkZKq.png" alt=""/> */}
       <Link to='/login' className='NavBar-link'>LOG IN</Link>
     
       <Link to='/signup' className='NavBar-link'>NEW USER</Link>
@@ -30,8 +31,8 @@ const NavBar = (props) => {
   return (
     <div>
     <div className='NavBar'>
+      {/* <img className="logo" src="https://i.imgur.com/XEXkZKq.png" alt=""/> */}
       {nav}
-      
     </div>
      
     </div> 

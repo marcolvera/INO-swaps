@@ -1,15 +1,9 @@
+
+
 .header {
     background-color: #ED2237;
     margin-top: 0;
     color: white;
     text-align: center;
     box-shadow: 2px 2px 2px grey
-}
-
-.editBox {
-    text-align: center;
-}
-
-.editLink {
-    color: red;
 }

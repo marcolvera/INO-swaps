@@ -1,11 +1,10 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import './EditShiftPage.css'
 
 class EditShiftPage extends Component {
   state = {
     invalidForm: false,
-    formData: this.props.location.state.shift
+    formData: this.props.state.shift
   };
 
   formRef = React.createRef();
@@ -25,12 +24,11 @@ class EditShiftPage extends Component {
 
   render() {
     return (
-      <div>
-         
-        <h1 className="header">Edit Shift</h1>
-        
+      <>
+        <div className="header">
+        <h1>Edit Shift</h1>
+        </div>
         <form ref={this.formRef} autoComplete="off" onSubmit={this.handleSubmit}>
-          <div className="editBox">
           <div className="form-group">
             <label>Date:</label>
             <input
@@ -45,7 +43,6 @@ class EditShiftPage extends Component {
           <div className="form-group">
             <label>Time:</label>
             <input
-              type="time"
               className="form-control"
               name="time"
               value={this.state.formData.time}
@@ -61,10 +58,9 @@ class EditShiftPage extends Component {
           >
             Update
           </button>&nbsp;&nbsp;
-          <Link className="editLink" to='/profile'>CANCEL</Link>
-          </div>
+          <Link to='/'>CANCEL</Link>
         </form>
-      </div>
+      </>
     );
   }
 }

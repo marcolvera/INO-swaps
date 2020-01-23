@@ -1,8 +1,9 @@
 .linkDiv {
-    background-color: rgb(206, 33, 33);
+    background-color: #ED2237;
     padding: .1rem;
     display: flex;
     justify-content: flex-end;
+    box-shadow: 2px 2px 2px grey
 }
 
 .link {
@@ -33,4 +34,17 @@
 
 .tableBtn {
     text-align: center;
+}
+
+.tableLink {
+    text-align: center;
+    
+}
+
+.removeOrEdit {
+    text-align: center;
+}
+
+.linkColor {
+    color: indianred;
 }
