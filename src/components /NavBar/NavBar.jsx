@@ -33,8 +33,9 @@ const NavBar = (props) => {
       {nav}
       
     </div>
-    <hr className="navLine"/>
-    </div>
+     
+    </div> 
+    
   );
 };
 

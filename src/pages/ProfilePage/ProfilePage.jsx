@@ -7,17 +7,15 @@ import ShiftList from '../../components /ShiftList/ShiftList'
 
 const ProfilePage = props => {
     const filterPost = props.shifts.filter(shift => shift.owner.includes(props.user._id)).map(shift => (
-        <div className="spacingContainer">
-        <div className="tableContainer">
-                <button className="delButton" onClick={() => props.handleDeleteShift(shift._id)}>Remove</button>
-             
-               
+        
+        <div >
                  <table>
                  <thead>
                  <tr>
                          <th>Date:</th>
                          <th>Time:</th>
                          <th>Level:</th>
+                         <th>Remove:</th>
                      </tr>
                  </thead>
                  <tbody>
@@ -25,13 +23,16 @@ const ProfilePage = props => {
                          <td>{shift.date}</td>
                          <td>{shift.time}</td>
                          <td>{shift.level}</td>
+                        <td className="tableBtn"><button className="delButton" onClick={() => props.handleDeleteShift(shift._id)}>x</button></td>
                         
                      </tr>
                  </tbody>
                  </table>
                 
             </div>  
-             </div>
+             
+             
+               
       ))
   
       return ( 
@@ -41,9 +42,9 @@ const ProfilePage = props => {
             <div className="postDiv">
                 {filterPost}
             </div>
-                
         </div>
       )}
+                
   
    
    

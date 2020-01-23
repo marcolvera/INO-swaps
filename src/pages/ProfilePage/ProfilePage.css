@@ -1,6 +1,6 @@
 .linkDiv {
     background-color: rgb(206, 33, 33);
-    height: 2.5rem;
+    padding: .1rem;
     display: flex;
     justify-content: flex-end;
 }
@@ -21,13 +21,16 @@
 .delButton {
     color: white;
     background-color: rgb(206, 33, 33);
-    width: 4rem;
-    height: 1.5rem;
-    border-radius: .5rem;
-    margin-top: .5rem;
-    margin-left: .4rem;
+    width: 2rem;
+    height: 1.3rem;
+    border-radius: .3rem;
+ 
 }
 
 .spaceBox {
     margin-top: 2rem;
+}
+
+.tableBtn {
+    text-align: center;
 }

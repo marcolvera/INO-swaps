@@ -1,12 +1,14 @@
 .NavBar {
     display: flex;
     justify-content: flex-end;
-    margin: .2rem 7rem 0 0;
+   
+    background-color: rgb(206, 33, 33);
+    padding: .8rem;
   }
 
   .NavBar-link {
     margin: 0 10px;
-    color: rgb(206, 33, 33);
+    color: white;
     font-family: 'Poppins', sans-serif
     
   }
