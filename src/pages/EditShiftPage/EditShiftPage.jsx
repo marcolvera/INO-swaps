@@ -45,7 +45,7 @@ class EditShiftPage extends Component {
           <div className="form-group">
             <label>Time:</label>
             <input
-              type="time"
+            
               className="form-control"
               name="time"
               value={this.state.formData.time}
