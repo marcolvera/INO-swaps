@@ -3,12 +3,12 @@
     justify-content: flex-end;
    
     background-color: #ED2237;
-    padding: .8rem;
-    box-shadow: 2px 2px 2px grey;
+    padding: .5rem;
+    box-shadow: .2rem .2rem .2rem grey
   }
 
   .NavBar-link {
-    margin: 0 10px;
+    margin: 0 .1rem;
     color: white;
     font-family: 'Poppins', sans-serif
     
@@ -22,13 +22,14 @@
     color: rgb(206, 33, 33);
   }
 
-  /* .navLine {
-    width: 83%;
-    border: .1rem solid rgb(206, 33, 33) ;
-  } */
-
+ 
   .logo {
-    width: 4rem;
+    width: 6rem;
     height: 3rem;
-    margin-right: 64rem;
+    margin-right: 58rem;
+  }
+
+  .NavBar-l {
+    color: white;
+   
   }

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './PostShiftPage.css'
 import { Link } from 'react-router-dom';
 import userService from '../../utils/userService';
+import TimePicker from 'react-time-picker';
 
 class PostShiftPage extends Component {
     state = {
@@ -51,7 +52,7 @@ class PostShiftPage extends Component {
               <label>Shift Time:</label>
               <input
                 className="form-control"
-                type='time'
+                // type='time'
                 name="time"
                 value={this.state.formData.time}
                 onChange={this.handleChange}

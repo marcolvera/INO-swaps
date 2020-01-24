@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { Route, Switch, Link } from 'react-router-dom';
 import './ProfilePage.css';
+import * as moment from 'moment'
 
 
 
@@ -21,7 +22,7 @@ const ProfilePage = props => {
                  </thead>
                  <tbody>
                      <tr>
-                         <td>{shift.date}</td>
+                         <td><moment>{moment(shift.date).format('MMMM Do YYYY')}</moment></td>
                          <td>{shift.time}</td>
                          <td>{shift.level}</td>
                         <td className="tableBtn"><button className="delButton" onClick={() => props.handleDeleteShift(shift._id)}>x</button></td>

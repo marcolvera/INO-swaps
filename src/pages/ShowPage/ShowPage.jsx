@@ -1,5 +1,7 @@
 import React from 'react' ;
 import './ShowPage.css'
+import * as moment from 'moment'
+import TimePicker from 'react-time-picker';
 
 
 
@@ -22,7 +24,8 @@ const ShowPage = props => {
     
         
             <tr>
-                <td>{shift.date}</td>
+                <td><moment>{moment(shift.date).format('MMMM Do, YYYY')}</moment></td>
+                {/* <td><moment>{moment(shift.time).format('hh:mm')}</moment></td> */}
                 <td>{shift.time}</td>
                 <td>{shift.level}</td>
                 

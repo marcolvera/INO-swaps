@@ -6,14 +6,14 @@ const NavBar = (props) => {
   let nav = props.user ?
     
     <div>
-      <Link to='post' className='NavBar-link'>POST</Link>
+      <Link to='post' className='NavBar-l'>POST</Link>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <Link to=''
         className='NavBar-link'
         onClick={props.handleLogout}
       >LOG OUT</Link>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <Link to='profile' className='NavBar-link'>PROFILE</Link>
+      <Link to='profile' className='NavBar-l'>PROFILE</Link>
     </div>
     
     
@@ -22,7 +22,7 @@ const NavBar = (props) => {
     <div className='NavBar-box'>
       {/* <img className="logo" src="https://i.imgur.com/XEXkZKq.png" alt=""/> */}
       <Link to='/login' className='NavBar-link'>LOG IN</Link>
-    
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <Link to='/signup' className='NavBar-link'>NEW USER</Link>
     </div>;
    
@@ -31,7 +31,7 @@ const NavBar = (props) => {
   return (
     <div>
     <div className='NavBar'>
-      {/* <img className="logo" src="https://i.imgur.com/XEXkZKq.png" alt=""/> */}
+      <img className="logo" src="https://i.imgur.com/XEXkZKq.png" alt=""/>
       {nav}
     </div>
      
