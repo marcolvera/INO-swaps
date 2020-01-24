@@ -40,10 +40,10 @@ const ProfilePage = props => {
              ))
              let profilePage = props.user ?
              <div>
-                {props.shifts.length <= 0 &&
+                {filterPost.length <= 0 &&
                 <h2 className="noShiftText">No Posts</h2>} 
         
-                {props.shifts.length > 0 &&
+                {filterPost.length > 0 &&
         
             <div>
             <h1 className="shiftLabel">Your Posts:</h1>
