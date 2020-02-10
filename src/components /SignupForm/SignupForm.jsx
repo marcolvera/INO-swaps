@@ -39,28 +39,29 @@ class SignupForm extends Component {
 
   render() {
     return (
-      <div>
-       <div id='signupBox'>
+      <div id='signup-wrapper'>
+        <div id='signupBox'>
+          <h1 id='signupMainTxt'>Create Account</h1>
           <form onSubmit={this.handleSubmit} >
               <div>
                 <p className='signText'>Name</p>
-                <input type="text" value={this.state.name} name="name" onChange={this.handleChange} />
+                <input className='signupInput' type="text" value={this.state.name} name="name" onChange={this.handleChange} />
               </div>
               <div>
                 <p className='signText'>Email</p>
-                <input type="email" value={this.state.email} name="email" onChange={this.handleChange} />
+                <input className='signupInput' type="email" value={this.state.email} name="email" onChange={this.handleChange} />
               </div>
               <div>
                 <p className='signText'>Password</p>
-                <input type="password" placeholder="Password" value={this.state.password} name="password" onChange={this.handleChange} />
+                <input className='signupInput' type="password"  value={this.state.password} name="password" onChange={this.handleChange} />
               </div>
               <div>
-                <p className='signText'>Retype Password</p>
-                <input type="password" placeholder="Confirm Password" value={this.state.passwordConf} name="passwordConf" onChange={this.handleChange} />
+                <p className='signText'>Confirm Password</p>
+                <input  className='signupInput' type="password" value={this.state.passwordConf} name="passwordConf" onChange={this.handleChange} />
               </div>
               <div>
                 <button disabled={this.isFormInvalid()}>Sign Up</button>
-                <Link to='/'>Cancel</Link>
+                <Link id='signupCancel' to='/'>Cancel</Link>
               </div>
           </form>
         </div>
@@ -71,6 +72,7 @@ class SignupForm extends Component {
           
 
 export default SignupForm;
+
           
        
           

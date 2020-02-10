@@ -32,14 +32,14 @@ class LoginPage extends Component {
 
   render() {
     return (
-      <div>
+      <div id='login-wrapper'>
         <div id='logoBox'><img id='loginLogo' src="https://imgur.com/gW2lXVR.png" alt=""/></div>
         <div id='loginDiv'>
           <header id='headerLogin'>AssociateLogin</header>
           <form>
             <div className='loginInput'>
               <input
-              className='input'
+              className='login'
               value={this.state.email}
               placeholder='Email'
               name='email'
@@ -49,7 +49,7 @@ class LoginPage extends Component {
             </div>
             <div className='loginInput'>
               <input
-              className='input'
+              className='login'
               value={this.state.pw}
               placeholder='Password'
               name='pw'
@@ -62,6 +62,9 @@ class LoginPage extends Component {
               <Link to='/signup' id='userLink'>New User</Link>
             </div>
           </form>
+        </div>
+        <div id='loginImg'>
+          <img src="https://i.imgur.com/IDrvJkg.png" alt=""/>
         </div>
       </div>
     );

@@ -2,12 +2,35 @@
   margin-top: 6rem;
   border: solid rgb(184, 38, 38) .3rem;
   display: inline-block;
-  padding: 4rem;
+  padding: 3rem;
   border-radius: .5rem;
   border-style: double;
+  width: 17rem;
+  text-align: left;
 }
 
 .signText {
   color: grey;
   font-size: small;
+}
+
+#signup-wrapper {
+  text-align: center;
+}
+
+#signupMainTxt {
+  font-size: large;
+  color: rgb(184, 38, 38);
+}
+
+.signupInput {
+  width: 10rem;
+}
+
+#signupCancel {
+  color: rgb(184, 38, 38);
+}
+
+#signupImg {
+  margin-top: 18rem;
 }
