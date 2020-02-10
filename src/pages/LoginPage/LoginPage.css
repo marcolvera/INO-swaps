@@ -1,37 +1,47 @@
-.LoginPage {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-  }
+.loginBtn {
+  border-radius: .2rem;
+  margin: .5rem;
+  width: 10rem;
+  height: 1.8rem;
+  color: white;
+  background-color: rgb(184, 38, 38);
+}
 
-  .form-control {
-    width: 15rem;
-    height: 1.5rem;
-    margin: .2rem;
-    border-radius: .3rem;
-  }
+button:hover {
+  cursor: pointer;
+}
 
-  .btn {
-    width: 10em;
-    
-  }
+#loginDiv {
+  margin-top: 6rem;
+  border: solid rgb(170, 169, 169) .1rem;
+  display: inline-block;
+  padding: 4rem;
+  border-radius: .5rem;
+  box-shadow: .1rem .3rem 1rem .2rem grey;
+}
 
-  .logCancel {
-    background-color: rgb(206, 33, 33);
-    width: 7rem;
-    border-radius: .2rem;
-  }
+header {
+  font-size: larger;
+  margin-top: -1rem;
+  color: rgb(184, 38, 38);
+}
 
-  .logLink {
-    color: rgb(206, 33, 33);
-  }
+.loginInput {
+  margin: .5rem;
+  width: 12rem;
+}
 
-  .header-footer {
-    margin-top: 7rem;
-    color: rgb(206, 33, 33);
-    font-weight: bold;
-    font-size: 2rem;
-    font-family: 'Indie Flower', cursive;
-  }
+#userLink {
+  text-decoration: none;
+  color: #F01D30;
+}
+
+#logoBox {
+  display: flex;
+  justify-content: left;
+  background-color: #F01D30;
+}
+
+#loginLogo {
+  width: 7rem;
+}

@@ -9,10 +9,6 @@ class GreetingsPage extends Component {
         return (
             <div>
                 <NavBar />
-                <div className="titleDiv">
-                    <h1 className="text">HOT SWAPS</h1>
-                </div>
-              
                 <div className="subDiv">
                     <h3 className="subText">Post a shift &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Take a shift</h3>
                 </div>
@@ -20,5 +16,7 @@ class GreetingsPage extends Component {
         )
     }
 }
+             
+              
 
 export default GreetingsPage;

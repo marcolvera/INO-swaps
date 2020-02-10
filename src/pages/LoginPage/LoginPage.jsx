@@ -32,26 +32,37 @@ class LoginPage extends Component {
 
   render() {
     return (
-      <div className="LoginPage">
-        <header className="header-footer">Associate Login</header>
-        <form className="form-horizontal" onSubmit={this.handleSubmit} >
-          <div className="form-group">
-            <div className="col-sm-12">
-              <input type="email" className="form-control" placeholder="Email" value={this.state.email} name="email" onChange={this.handleChange} />
+      <div>
+        <div id='logoBox'><img id='loginLogo' src="https://imgur.com/gW2lXVR.png" alt=""/></div>
+        <div id='loginDiv'>
+          <header id='headerLogin'>AssociateLogin</header>
+          <form>
+            <div className='loginInput'>
+              <input
+              className='input'
+              value={this.state.email}
+              placeholder='Email'
+              name='email'
+              type='text'
+              onChange={this.handleChange}
+              />
             </div>
-          </div>
-          <div className="form-group">
-            <div className="col-sm-12">
-              <input type="password" className="form-control" placeholder="Password" value={this.state.pw} name="pw" onChange={this.handleChange} />
+            <div className='loginInput'>
+              <input
+              className='input'
+              value={this.state.pw}
+              placeholder='Password'
+              name='pw'
+              type='text'
+              onChange={this.handleChange}
+              />
             </div>
-          </div>
-          <div className="form-group">
-            <div className="col-sm-12 text-center">
-              <button className="btn btn-default">Log In</button>&nbsp;&nbsp;&nbsp;
-              <Link className="logLink" to='/'>Cancel</Link>
+            <button className='loginBtn'>Login</button>
+            <div>
+              <Link to='/signup' id='userLink'>New User</Link>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     );
   }
