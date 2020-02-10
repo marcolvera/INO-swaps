@@ -40,38 +40,43 @@ class SignupForm extends Component {
   render() {
     return (
       <div>
-        <header className="header-footer">Sign Up</header>
-        <form className="form-horizontal" onSubmit={this.handleSubmit} >
-          <div className="form-group">
-            <div className="col-sm-12">
-              <input type="text" className="form-control" placeholder="Name" value={this.state.name} name="name" onChange={this.handleChange} />
-            </div>
-          </div>
-          <div className="form-group">
-            <div className="col-sm-12">
-              <input type="email" className="form-control" placeholder="Email" value={this.state.email} name="email" onChange={this.handleChange} />
-            </div>
-          </div>
-          <div className="form-group">
-            <div className="col-sm-12">
-              <input type="password" className="form-control" placeholder="Password" value={this.state.password} name="password" onChange={this.handleChange} />
-            </div>
-          </div>
-          <div className="form-group">
-            <div className="col-sm-12">
-              <input type="password" className="form-control" placeholder="Confirm Password" value={this.state.passwordConf} name="passwordConf" onChange={this.handleChange} />
-            </div>
-          </div>
-          <div className="form-group">
-            <div className="col-sm-12 text-center">
-              <button className="btn btn-default" disabled={this.isFormInvalid()}>Sign Up</button>
-              <Link className="signLink" to='/'>Cancel</Link>
-            </div>
-          </div>
-        </form>
+       <div id='signupBox'>
+          <form onSubmit={this.handleSubmit} >
+              <div>
+                <p className='signText'>Name</p>
+                <input type="text" value={this.state.name} name="name" onChange={this.handleChange} />
+              </div>
+              <div>
+                <p className='signText'>Email</p>
+                <input type="email" value={this.state.email} name="email" onChange={this.handleChange} />
+              </div>
+              <div>
+                <p className='signText'>Password</p>
+                <input type="password" placeholder="Password" value={this.state.password} name="password" onChange={this.handleChange} />
+              </div>
+              <div>
+                <p className='signText'>Retype Password</p>
+                <input type="password" placeholder="Confirm Password" value={this.state.passwordConf} name="passwordConf" onChange={this.handleChange} />
+              </div>
+              <div>
+                <button disabled={this.isFormInvalid()}>Sign Up</button>
+                <Link to='/'>Cancel</Link>
+              </div>
+          </form>
+        </div>
       </div>
     );
   }
 }
+          
 
 export default SignupForm;
+          
+       
+          
+        
+       
+          
+          
+          
+         
