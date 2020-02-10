@@ -65,6 +65,9 @@ class SignupForm extends Component {
               </div>
           </form>
         </div>
+        <div id='signupImg'>
+          <img src="https://i.imgur.com/IDrvJkg.png" alt=""/>
+        </div>
       </div>
     );
   }

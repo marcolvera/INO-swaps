@@ -33,10 +33,10 @@ class LoginPage extends Component {
   render() {
     return (
       <div id='login-wrapper'>
-        <div id='logoBox'><img id='loginLogo' src="https://imgur.com/gW2lXVR.png" alt=""/></div>
+        {/* <div id='logoBox'><img id='loginLogo' src="https://imgur.com/gW2lXVR.png" alt=""/></div> */}
         <div id='loginDiv'>
           <header id='headerLogin'>AssociateLogin</header>
-          <form>
+          <form onSubmit={this.handleSubmit}>
             <div className='loginInput'>
               <input
               className='login'
