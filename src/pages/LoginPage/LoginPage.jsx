@@ -29,42 +29,43 @@ class LoginPage extends Component {
       alert('Invalid Credentials!');
     }
   }
-
   render() {
     return (
-      <div id='login-wrapper'>
-        {/* <div id='logoBox'><img id='loginLogo' src="https://imgur.com/gW2lXVR.png" alt=""/></div> */}
-        <div id='loginDiv'>
-          <header id='headerLogin'>AssociateLogin</header>
-          <form onSubmit={this.handleSubmit}>
-            <div className='loginInput'>
-              <input
-              className='login'
-              value={this.state.email}
-              placeholder='Email'
-              name='email'
-              type='text'
-              onChange={this.handleChange}
-              />
-            </div>
-            <div className='loginInput'>
-              <input
-              className='login'
-              value={this.state.pw}
-              placeholder='Password'
-              name='pw'
-              type='text'
-              onChange={this.handleChange}
-              />
-            </div>
-            <button className='loginBtn'>Login</button>
-            <div>
-              <Link to='/signup' id='userLink'>New User</Link>
-            </div>
-          </form>
-        </div>
-        <div id='loginImg'>
-          <img src="https://i.imgur.com/IDrvJkg.png" alt=""/>
+      <div>
+        <Link id='managerLink'>Manager Login</Link>
+        <div id='login-wrapper'>
+          <div id='loginDiv'>
+            <header id='headerLogin'>AssociateLogin</header>
+            <form onSubmit={this.handleSubmit}>
+              <div className='loginInput'>
+                <input
+                className='login'
+                value={this.state.email}
+                placeholder='Email'
+                name='email'
+                type='text'
+                onChange={this.handleChange}
+                />
+              </div>
+              <div className='loginInput'>
+                <input
+                className='login'
+                value={this.state.pw}
+                placeholder='Password'
+                name='pw'
+                type='text'
+                onChange={this.handleChange}
+                />
+              </div>
+              <button className='loginBtn'>Login</button>
+              <div>
+                <Link to='/signup' id='userLink'>New User</Link>
+              </div>
+            </form>
+          </div>
+          <div id='loginImg'>
+            <img src="https://i.imgur.com/IDrvJkg.png" alt=""/>
+          </div>
         </div>
       </div>
     );
