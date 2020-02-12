@@ -59,3 +59,13 @@ header {
 #loginImg {
   margin-top: 20rem;
 }
+
+#managerBox {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1rem 2rem 0 0;
+}
+
+#managerLink {
+  color:  rgb(184, 38, 38);
+}

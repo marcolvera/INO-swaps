@@ -32,7 +32,9 @@ class LoginPage extends Component {
   render() {
     return (
       <div>
-        <Link id='managerLink'>Manager Login</Link>
+        <div id='managerBox'>
+          <Link id='managerLink'>Manager Login</Link>
+        </div>
         <div id='login-wrapper'>
           <div id='loginDiv'>
             <header id='headerLogin'>AssociateLogin</header>
