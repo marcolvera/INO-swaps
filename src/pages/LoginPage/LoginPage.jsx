@@ -33,7 +33,7 @@ class LoginPage extends Component {
     return (
       <div>
         <div id='managerBox'>
-          <Link id='managerLink'>Manager Login</Link>
+          <Link to='/manager' id='managerLink'>Manager Login</Link>
         </div>
         <div id='login-wrapper'>
           <div id='loginDiv'>

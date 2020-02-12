@@ -9,6 +9,7 @@ import PostShiftPage from '../PostShiftPage/PostShiftPage'
 import ProfilePage from '../ProfilePage/ProfilePage'
 import userService from '../../utils/userService';
 import EditShiftPage from '../EditShiftPage/EditShiftPage'
+import ManagerPage from '../ManagerPage/ManagerPage'
 
 
 
@@ -117,6 +118,9 @@ class App extends Component {
               
             />
           } />
+            <Route exact path='/manager' render={() =>
+              <ManagerPage />}
+            />
     </Switch>
     </div>
   )
