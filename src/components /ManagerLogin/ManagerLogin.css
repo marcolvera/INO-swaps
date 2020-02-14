@@ -1,0 +1,66 @@
+.managerLoginBtn {
+    border-radius: .2rem;
+    margin: .5rem;
+    width: 12rem;
+    height: 1.8rem;
+    color: white;
+    background-color: rgb(184, 38, 38);
+  }
+  
+  button:hover {
+    cursor: pointer;
+  }
+  
+  #managerDiv {
+    margin-top: 10rem;
+    border: solid rgb(170, 169, 169) .1rem;
+    display: inline-block;
+    padding: 3rem;
+    border-radius: .5rem;
+    box-shadow: .1rem .3rem 1rem .2rem grey;
+    width: 12rem;
+    height: 10rem;
+  }
+  
+  header {
+    font-size: larger;
+    margin-top: -1rem;
+    color: rgb(184, 38, 38);
+  }
+  
+  .managerLogin {
+    margin: .5rem;
+    width: 12rem;
+    height: 1.5rem;
+    border-radius: .2rem;
+    font-size: .8rem;
+  }
+  
+  #adminLink {
+    text-decoration: none;
+    color: #F01D30;
+  }
+  
+  #managerLoginLogo {
+    width: 7rem;
+    margin-top: 4rem;
+  }
+  
+  #manager-wrapper {
+   text-align: center;
+   
+  }
+  
+  #managerLoginImg {
+    margin-top: 13rem;
+  }
+  
+  #managerBox {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem 2rem 0 0;
+  }
+  
+  #backLink {
+    color:  #F01D30;
+  }

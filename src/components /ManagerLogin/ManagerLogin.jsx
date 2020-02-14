@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './ManagerLogin.css';
 import managerService from '../../utils/managerService';
+import ManagerPage from '../../pages/ManagerPage/ManagerPage';
 
-class LoginPage extends Component {
+class ManagerLogin extends Component {
   
   state = {
     credentials: '',
@@ -69,4 +70,4 @@ class LoginPage extends Component {
   }
 }
 
-export default LoginPage;
+export default ManagerLogin;
