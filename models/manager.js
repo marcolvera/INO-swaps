@@ -12,7 +12,7 @@ const managerSchema = new mongoose.Schema({
     },
     password: String,
     credentials: {
-        type: Number,
+        type: String,
         required: true
     }
 },{
