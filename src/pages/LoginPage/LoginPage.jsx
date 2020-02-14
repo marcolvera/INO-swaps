@@ -32,9 +32,6 @@ class LoginPage extends Component {
   render() {
     return (
       <div>
-        <div id='managerBox'>
-          <Link to='/manager' id='managerLink'>Manager Login</Link>
-        </div>
         <div id='login-wrapper'>
           <div id='loginDiv'>
             <header id='headerLogin'>AssociateLogin</header>
@@ -61,7 +58,8 @@ class LoginPage extends Component {
               </div>
               <button className='loginBtn'>Login</button>
               <div>
-                <Link to='/signup' id='userLink'>New User</Link>
+                <Link to='/signup' id='userLink'>New User </Link>
+                <Link to='/manager' id='managerLink'>| Manager</Link>
               </div>
             </form>
           </div>
@@ -75,3 +73,4 @@ class LoginPage extends Component {
 }
 
 export default LoginPage;
+
