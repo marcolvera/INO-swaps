@@ -1,0 +1,28 @@
+#adminLoginDiv {
+    margin-top: 10rem;
+    border: solid rgb(170, 169, 169) .1rem;
+    display: inline-block;
+    padding: 3rem;
+    border-radius: .5rem;
+    box-shadow: .1rem .3rem 1rem .2rem grey;
+    width: 10rem;
+    height: 5rem;
+}
+
+#adminLogin-wrapper {
+    text-align: center;
+}
+
+#adminLogin-btn {
+    border-radius: .1rem;
+    color: white;
+    background-color: rgb(184, 38, 38);
+}
+
+#adminBack-link {
+    color: rgb(184, 38, 38);
+}
+
+#adminLogin {
+    margin-top: .5rem;
+}
