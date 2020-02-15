@@ -10,7 +10,7 @@ import ProfilePage from '../ProfilePage/ProfilePage'
 import userService from '../../utils/userService';
 import EditShiftPage from '../EditShiftPage/EditShiftPage'
 import ManagerPage from '../ManagerPage/ManagerPage'
-import AdminPage from '../AdminPage/AdminPage';
+import AdminLoginPage from '../AdminLoginPage/AdminLoginPage';
 
 
 class App extends Component {
@@ -122,7 +122,7 @@ class App extends Component {
               <ManagerPage />
             }/>
             <Route exact path='/admin' render={() =>
-            <AdminPage />
+            <AdminLoginPage />
           }/>
     </Switch>
     </div>

@@ -1,10 +1,10 @@
-import React , {Component} from 'react';
+import React from 'react';
 import './AdminPage.css';
 
 const AdminPage = props => {
     return(
         <div>
-            <h1>Hello world</h1>
+            <h1>I am adminPage</h1>
         </div>
     )
 }
