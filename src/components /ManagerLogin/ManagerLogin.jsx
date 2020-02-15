@@ -57,7 +57,7 @@ class ManagerLogin extends Component {
               <button className='managerLoginBtn'>Login</button>
               <div>
                 <Link to='/' id='backLink'>Cancel </Link>
-                <Link to='/admin' id='adminLink'>| Admin</Link>
+                <Link to='/admin/login' id='adminLink'>| Admin</Link>
               </div>
             </form>
           </div>

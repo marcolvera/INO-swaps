@@ -11,7 +11,7 @@ import userService from '../../utils/userService';
 import EditShiftPage from '../EditShiftPage/EditShiftPage'
 import ManagerPage from '../ManagerPage/ManagerPage'
 import AdminLoginPage from '../AdminLoginPage/AdminLoginPage';
-
+import AdminPage from '../AdminPage/AdminPage';
 
 class App extends Component {
   constructor() {
@@ -119,10 +119,16 @@ class App extends Component {
             />
           } />
             <Route exact path='/manager/login' render={() =>
-              <ManagerPage />
+              <ManagerPage/>
+          
             }/>
-            <Route exact path='/admin' render={() =>
-            <AdminLoginPage />
+            <Route exact path='/admin/login' render={({history}) =>
+            <AdminLoginPage 
+            history={history}
+            />
+          }/>
+          <Route exact path='/manager' render={() =>
+          <AdminPage />
           }/>
     </Switch>
     </div>

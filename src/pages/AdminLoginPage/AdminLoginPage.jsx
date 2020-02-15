@@ -17,7 +17,7 @@ class AdminLoginPage extends Component  {
     handleSubmit = async (e) => {
         try{
             if(this.state.password == this.state.admin) {
-                alert('this works!')
+                this.props.history.push('/manager')
             } else {
                 alert('Invalid')
             }
