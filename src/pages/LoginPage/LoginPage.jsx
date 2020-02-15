@@ -59,7 +59,7 @@ class LoginPage extends Component {
               <button className='loginBtn'>Login</button>
               <div>
                 <Link to='/signup' id='userLink'>New User </Link>
-                <Link to='/manager' id='managerLink'>| Manager</Link>
+                <Link to='/manager/login' id='managerLink'>| Manager</Link>
               </div>
             </form>
           </div>

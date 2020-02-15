@@ -118,7 +118,7 @@ class App extends Component {
               
             />
           } />
-            <Route exact path='/manager' render={() =>
+            <Route exact path='/manager/login' render={() =>
               <ManagerPage />}
             />
     </Switch>
