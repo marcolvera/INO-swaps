@@ -25,4 +25,11 @@
 
 #adminLogin {
     margin-top: .5rem;
+    height: 1rem;
+    width: 9rem;
+    border-radius: .2rem;
+}
+
+#adminLink-box {
+    margin-top: 1rem;
 }

@@ -44,9 +44,11 @@ class AdminLoginPage extends Component  {
                             />
                         </div>
                     </form>
-                    <button id='adminLogin-btn'>Confirm</button>
-                    &nbsp;&nbsp;
-                    <Link id='adminBack-link' to='/manager/login'>Back</Link>
+                    <div id='adminLink-box'>
+                        <button id='adminLogin-btn'>Confirm</button>
+                        &nbsp;&nbsp;
+                        <Link id='adminBack-link' to='/manager/login'>Back</Link>
+                    </div>
                 </div>
             </div>
         </div>
