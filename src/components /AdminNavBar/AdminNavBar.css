@@ -1,0 +1,15 @@
+#adminNav {
+    display: flex;
+    justify-content: flex-end;
+   
+    background-color: #ED2237;
+    padding: .5rem;
+    box-shadow: .2rem .2rem .2rem grey
+  }
+
+#adminLogout {
+    margin: 0 .1rem;
+    color: white;
+    font-family: 'Poppins', sans-serif
+    
+  }

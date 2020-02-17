@@ -5,7 +5,9 @@ import './AdminNavBar.css';
 const AdminNavBar = props => {
     return(
         <div>
-            <h1>I am nav bar</h1>
+            <div id='adminNav'>
+                <Link id='adminLogout' to='/admin/login'>Log Out</Link>
+            </div>
         </div>
     )
 };
