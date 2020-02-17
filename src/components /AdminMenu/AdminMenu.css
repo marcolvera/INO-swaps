@@ -1,0 +1,14 @@
+.menuImg{
+    width: 10.6rem;
+}
+
+#menuDiv {
+    margin-top: 7rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menuLink {
+    color: black;
+}
+
