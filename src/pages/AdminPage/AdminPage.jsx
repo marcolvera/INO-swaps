@@ -1,10 +1,12 @@
 import React from 'react';
 import './AdminPage.css';
+import AdminNavBar from '../../components /AdminNavBar/AdminNavBar'
+
 
 const AdminPage = props => {
     return(
         <div>
-            <h1>I am adminPage</h1>
+            <AdminNavBar />
         </div>
     )
 }

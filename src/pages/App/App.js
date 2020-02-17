@@ -127,7 +127,7 @@ class App extends Component {
             history={history}
             />
           }/>
-          <Route exact path='/manager' render={() =>
+          <Route exact path='/admin' render={() =>
           <AdminPage />
           }/>
     </Switch>

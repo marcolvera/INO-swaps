@@ -18,7 +18,7 @@ class AdminLoginPage extends Component  {
     handleSubmit = async (e) => {
         try{
             if(this.state.password == this.state.admin) {
-                this.props.history.push('/manager')
+                this.props.history.push('/admin')
             } else {
                 alert('Invalid')
             }
@@ -43,12 +43,12 @@ class AdminLoginPage extends Component  {
                             placeholder='####'
                             />
                         </div>
+                        <div id='adminLink-box'>
+                            <button id='adminLogin-btn'>Confirm</button>
+                            &nbsp;&nbsp;
+                            <Link id='adminBack-link' to='/manager/login'>Back</Link>
+                        </div>
                     </form>
-                    <div id='adminLink-box'>
-                        <button id='adminLogin-btn'>Confirm</button>
-                        &nbsp;&nbsp;
-                        <Link id='adminBack-link' to='/manager/login'>Back</Link>
-                    </div>
                 </div>
             </div>
         </div>
