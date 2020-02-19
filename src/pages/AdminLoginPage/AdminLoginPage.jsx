@@ -33,14 +33,14 @@ class AdminLoginPage extends Component  {
             <div id='adminLogin-wrapper'>
                 <div id='adminLoginDiv'>
                     <form onSubmit={this.handleSubmit}>
-                        <header>Enter Admin key:</header>
+                        <header>Enter Admin Key:</header>
                         <div>
                             <input
                             id='adminLogin'
                             value={this.state.admin}
                             name='admin'
                             onChange={this.handleChange}
-                            placeholder='####'
+                            placeholder='#######'
                             />
                         </div>
                         <div id='adminLink-box'>
