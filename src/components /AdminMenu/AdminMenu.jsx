@@ -8,7 +8,7 @@ const AdminMenu = props => {
         <div>
             <div id='menuDiv'>
                 <div>
-                    <Link className='menuLink'>
+                    <Link to='add/manager' className='menuLink'>
                         <img className='menuImg' src="https://i.imgur.com/9tDnrDy.png" alt=""/>
                         <p>Add a Manager</p>
                     </Link>

@@ -12,6 +12,7 @@ import EditShiftPage from '../EditShiftPage/EditShiftPage'
 import ManagerPage from '../ManagerPage/ManagerPage'
 import AdminLoginPage from '../AdminLoginPage/AdminLoginPage';
 import AdminPage from '../AdminPage/AdminPage';
+import AddManagerPage from '../AddManagerPage/AddManagerPage';
 
 class App extends Component {
   constructor() {
@@ -129,6 +130,12 @@ class App extends Component {
           }/>
           <Route exact path='/admin' render={() =>
           <AdminPage />
+          }/>
+          <Route exact path='/add/manager' render={({history}) =>
+          <AddManagerPage
+          history={history}
+          handleSignupOrLogin={this.handleSignupOrLogin}
+          />
           }/>
     </Switch>
     </div>
