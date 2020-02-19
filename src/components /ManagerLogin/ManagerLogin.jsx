@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './ManagerLogin.css';
 import managerService from '../../utils/managerService';
-import ManagerPage from '../../pages/ManagerPage/ManagerPage';
+// import ManagerLoginPage from '../../pages/ManagerLoginPage/ManagerLoginPage';
 
 class ManagerLogin extends Component {
   

@@ -9,7 +9,7 @@ module.exports = {
 
 async function login(req, res) {
   try {
-    const manager = await Manager.findOne({email: req.body.email});
+    const manager = await Manager.findOne({credentials: req.body.credentials});
     if (!manager) return res.status(401).json({err: 'bad credentials'});
     manager.comparePassword(req.body.pw, (err, isMatch) => {
       if (isMatch) {

@@ -1,10 +1,10 @@
 import React, { Component } from "react"
 import {Link} from 'react-router-dom'
-import './ManagerPage.css'
+import './ManagerLoginPage.css'
 import ManagerLogin from '../../components /ManagerLogin/ManagerLogin'
 
 
-const ManagerPage = props => {
+const ManagerLoginPage = props => {
     return(
         <div>
             <ManagerLogin />
@@ -12,5 +12,5 @@ const ManagerPage = props => {
     )
 }
 
-export default ManagerPage;
+export default ManagerLoginPage;
 

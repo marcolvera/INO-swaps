@@ -9,7 +9,7 @@ export default {
 };
 
 function login(creds) {
-  return fetch(BASE_URL + 'login', {
+  return fetch(BASE_URL + 'managerLogin', {
     method: 'POST',
     headers: new Headers({'Content-Type': 'application/json'}),
     body: JSON.stringify(creds)
@@ -28,7 +28,7 @@ function getManager() {
 }
 
 function signup(manager) {
-  return fetch(BASE_URL + 'signup', {
+  return fetch(BASE_URL + 'ManagerSignup', {
     method: 'POST',
     headers: new Headers({'Content-Type': 'application/json'}),
     body: JSON.stringify(manager)

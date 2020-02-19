@@ -9,7 +9,7 @@ import PostShiftPage from '../PostShiftPage/PostShiftPage'
 import ProfilePage from '../ProfilePage/ProfilePage'
 import userService from '../../utils/userService';
 import EditShiftPage from '../EditShiftPage/EditShiftPage'
-import ManagerPage from '../ManagerPage/ManagerPage'
+import ManagerLoginPage from '../ManagerLoginPage/ManagerLoginPage';
 import AdminLoginPage from '../AdminLoginPage/AdminLoginPage';
 import AdminPage from '../AdminPage/AdminPage';
 import AddManagerPage from '../AddManagerPage/AddManagerPage';
@@ -126,7 +126,7 @@ class App extends Component {
             />
           } />
             <Route exact path='/manager/login' render={() =>
-              <ManagerPage/>
+              <ManagerLoginPage/>
           
             }/>
             <Route exact path='/admin/login' render={({history}) =>

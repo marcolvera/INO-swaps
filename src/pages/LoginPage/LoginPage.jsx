@@ -34,7 +34,7 @@ class LoginPage extends Component {
       <div>
         <div id='login-wrapper'>
           <div id='loginDiv'>
-            <header id='headerLogin'>AssociateLogin</header>
+            <header id='headerLogin'>Associate Login</header>
             <form onSubmit={this.handleSubmit}>
               <div className='loginInput'>
                 <input

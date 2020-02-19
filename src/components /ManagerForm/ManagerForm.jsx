@@ -7,7 +7,7 @@ class ManagerForm extends Component {
 
   state = {
     name: '',
-    credential: '',
+    credentials: '',
     password: '',
     passwordConf: ''
   };
@@ -35,7 +35,7 @@ class ManagerForm extends Component {
   
 
   isFormInvalid() {
-    return !(this.state.name && this.state.credential && this.state.password === this.state.passwordConf);
+    return !(this.state.name && this.state.credentials && this.state.password === this.state.passwordConf);
   }
 
   render() {
@@ -51,7 +51,7 @@ class ManagerForm extends Component {
                 </div>
                 <div>
                   <p className='signText'>Credentials</p>
-                  <input className='signupInput' type="text" value={this.state.credential} name="credential" onChange={this.handleChange} />
+                  <input className='signupInput' type="text" value={this.state.credentials} name="credentials" onChange={this.handleChange} />
                 </div>
                 <div>
                   <p className='signText'>Password</p>
