@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import managerService from '../../utils/managerService';
-import AdminNavBar from '../../components /AdminNavBar/AdminNavBar';
 
-class AddManagerPage extends Component {
+
+class ManagerForm extends Component {
 
   state = {
     name: '',
     credential: '',
-    credentialConf: '',
     password: '',
     passwordConf: ''
   };
@@ -25,7 +24,7 @@ class AddManagerPage extends Component {
     e.preventDefault();
     try {
       await managerService.signup(this.state);
-      this.props.handleSignupOrLogin();
+      this.props.handleManagerSignupOrLogin();
       this.props.history.push('/admin');
     } catch (err) {
         this.props.updateMessage(err.message);
@@ -36,7 +35,7 @@ class AddManagerPage extends Component {
   
 
   isFormInvalid() {
-    return !(this.state.name && this.state.email && this.state.password === this.state.passwordConf);
+    return !(this.state.name && this.state.credential && this.state.password === this.state.passwordConf);
   }
 
   render() {
@@ -53,7 +52,7 @@ class AddManagerPage extends Component {
                 </div>
                 <div>
                   <p className='signText'>Email</p>
-                  <input className='signupInput' type="email" value={this.state.email} name="email" onChange={this.handleChange} />
+                  <input className='signupInput' type="text" value={this.state.credential} name="credential" onChange={this.handleChange} />
                 </div>
                 <div>
                   <p className='signText'>Password</p>
@@ -75,6 +74,4 @@ class AddManagerPage extends Component {
   }
 }
       
-export default AddManagerPage;
-          
-
+export default ManagerForm;

@@ -13,13 +13,15 @@ import ManagerPage from '../ManagerPage/ManagerPage'
 import AdminLoginPage from '../AdminLoginPage/AdminLoginPage';
 import AdminPage from '../AdminPage/AdminPage';
 import AddManagerPage from '../AddManagerPage/AddManagerPage';
+import managerService from '../../utils/managerService';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
       user: userService.getUser(),
-      shifts: []
+      shifts: [],
+      manager: managerService.getManager(),
     };
   }
 
@@ -55,6 +57,10 @@ class App extends Component {
 
   handleSignupOrLogin = () => {
     this.setState({user: userService.getUser()});
+  }
+
+  handleManagerSignupOrLogin = () => {
+    this.setState({manager: managerService.getManager()});
   }
 
 
@@ -134,7 +140,7 @@ class App extends Component {
           <Route exact path='/add/manager' render={({history}) =>
           <AddManagerPage
           history={history}
-          handleSignupOrLogin={this.handleSignupOrLogin}
+          handleManagerSignupOrLogin={this.handleManagerSignupOrLogin}
           />
           }/>
     </Switch>
