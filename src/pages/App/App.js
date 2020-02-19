@@ -21,6 +21,7 @@ class App extends Component {
     this.state = {
       user: userService.getUser(),
       shifts: [],
+      users: [],
       manager: managerService.getManager(),
     };
   }
@@ -72,6 +73,7 @@ class App extends Component {
       this.setState({shifts});
       console.log(shifts)
     }
+
 
 
 
