@@ -14,7 +14,7 @@ const AdminMenu = props => {
                     </Link>
                 </div>
                 <div>
-                    <Link className='menuLink'>
+                    <Link to='system/users' className='menuLink'>
                         <img className='menuImg' src="https://i.imgur.com/0oM8cvM.png" alt=""/>
                         <p>View all Users</p>
                     </Link>

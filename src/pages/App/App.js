@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import { Route, Switch } from 'react-router-dom';
 import  * as shiftAPI from '../../services/shifts-api';
+import * as systemUsersAPI from '../../services/systemUsers-api';
 import Homepage from '../Homepage/Homepage'
 import SignupPage from '../SignupPage/SignupPage'
 import LoginPage from '../LoginPage/LoginPage'
@@ -14,6 +15,8 @@ import AdminLoginPage from '../AdminLoginPage/AdminLoginPage';
 import AdminPage from '../AdminPage/AdminPage';
 import AddManagerPage from '../AddManagerPage/AddManagerPage';
 import managerService from '../../utils/managerService';
+import systemUsersPage from '../SystemUsersPage/SystemUsersPage';
+import SystemUsersPage from '../SystemUsersPage/SystemUsersPage';
 
 class App extends Component {
   constructor() {
@@ -73,6 +76,12 @@ class App extends Component {
       this.setState({shifts});
       console.log(shifts)
     }
+
+  async componentDidMount() {
+    const users = await systemUsersAPI.getAll()
+    this.setState({users});
+    console.log(users)
+  };
 
 
 
@@ -144,6 +153,10 @@ class App extends Component {
           history={history}
           handleManagerSignupOrLogin={this.handleManagerSignupOrLogin}
           />
+          }/>
+          <Route exact path='/system/users' render={() =>
+          <SystemUsersPage 
+          users={this.state.users}/>
           }/>
     </Switch>
     </div>

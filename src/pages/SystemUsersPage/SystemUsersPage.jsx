@@ -3,11 +3,17 @@ import {Link} from 'react-router-dom';
 import './SystemUsersPage';
 
 const SystemUsersPage = props => {
+    const allUsers = props.users.map(user =>(
+    <h4>{user.name}</h4>
+    ))
     return(
         <div>
-            <h1>I am all users</h1>
+            <div>
+
+            {allUsers}
+            </div>
         </div>
     )
 }
 
-export default SystemUsersPage
+export default SystemUsersPage;
