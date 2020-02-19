@@ -41,7 +41,6 @@ class ManagerForm extends Component {
   render() {
     return (
       <div>
-        <AdminNavBar />
         <div id='signup-wrapper'>
           <div id='signupBox'>
             <h1 id='signupMainTxt'>Create Account</h1>
@@ -51,7 +50,7 @@ class ManagerForm extends Component {
                   <input className='signupInput' type="text" value={this.state.name} name="name" onChange={this.handleChange} />
                 </div>
                 <div>
-                  <p className='signText'>Email</p>
+                  <p className='signText'>Credentials</p>
                   <input className='signupInput' type="text" value={this.state.credential} name="credential" onChange={this.handleChange} />
                 </div>
                 <div>
@@ -73,5 +72,6 @@ class ManagerForm extends Component {
     );
   }
 }
-      
+
 export default ManagerForm;
+     

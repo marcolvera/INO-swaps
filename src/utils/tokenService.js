@@ -2,7 +2,8 @@ export default {
     setToken,
     getToken,
     removeToken,
-    getUserFromToken
+    getUserFromToken,
+    getManagerFromToken
   };
   
   function removeToken() {
@@ -14,6 +15,11 @@ export default {
     return token && JSON.parse(atob(token.split('.')[1])).user;
   }
   
+  function getManagerFromToken() {
+    const token = getToken();
+    return token && JSON.parse(atob(token.split('.')[1])).manager;
+  }
+
   function getToken() {
     let token = localStorage.getItem('token');
     if (token) {
