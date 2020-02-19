@@ -12,6 +12,7 @@ require('./config/database');
 
 // Route for shifts that will have CRUD 
 var shiftsRouter = require('./routes/api/shifts');
+var systemUsersRouter = require('./routes/api/systemUsers');
 
 
 app.use(logger('dev'));
@@ -29,6 +30,7 @@ app.use('/api/users', require('./routes/api/users'));
 app.use('/api/managers', require('./routes/api/managers'));
 app.use(require('./config/auth'));
 app.use('/api/shifts', shiftsRouter);
+app.use('/api/system/users', systemUsersRouter);
 
 // The following "catch all" route (note the *)is necessary
 // for a SPA's client-side routing to properly work
