@@ -31,7 +31,7 @@ class LoginPage extends Component {
   }
   render() {
     return (
-      <div>
+      <div id='backgroundLogin'>
         <div id='login-wrapper'>
           <div id='loginDiv'>
             <header id='headerLogin'>Associate Login</header>

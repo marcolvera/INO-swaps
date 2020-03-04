@@ -77,11 +77,11 @@ class App extends Component {
       console.log(shifts)
     }
 
-  async componentDidMount() {
-    const users = await systemUsersAPI.getAll()
-    this.setState({users});
-    console.log(users)
-  };
+  // async componentDidMount() {
+  //   const users = await systemUsersAPI.getAll()
+  //   this.setState({users});
+  //   console.log(users)
+  // };
 
 
 
