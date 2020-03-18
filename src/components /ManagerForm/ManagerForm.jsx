@@ -43,7 +43,7 @@ class ManagerForm extends Component {
       <div>
         <div id='signup-wrapper'>
           <div id='signupBox'>
-            <h1 id='signupMainTxt'>Create Account</h1>
+            <h1 id='signupMainTxt'>Manager information:</h1>
             <form onSubmit={this.handleSubmit} >
                 <div>
                   <p className='signText'>Name</p>

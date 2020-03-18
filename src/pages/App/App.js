@@ -74,9 +74,15 @@ class App extends Component {
   async componentDidMount() {
       const shifts = await shiftAPI.getAll();
       this.setState({shifts});
+      const users = await systemUsersAPI.getAll();
+      this.setState({users});
       console.log(shifts)
+      console.log(users)
+
     }
 
+  //fix this! w
+  //similar named code creates error when fetching the shifts 
   // async componentDidMount() {
   //   const users = await systemUsersAPI.getAll()
   //   this.setState({users});
