@@ -15,7 +15,6 @@ import AdminLoginPage from '../AdminLoginPage/AdminLoginPage';
 import AdminPage from '../AdminPage/AdminPage';
 import AddManagerPage from '../AddManagerPage/AddManagerPage';
 import managerService from '../../utils/managerService';
-import systemUsersPage from '../SystemUsersPage/SystemUsersPage';
 import SystemUsersPage from '../SystemUsersPage/SystemUsersPage';
 
 class App extends Component {
@@ -81,13 +80,7 @@ class App extends Component {
 
     }
 
-  //fix this! w
-  //similar named code creates error when fetching the shifts 
-  // async componentDidMount() {
-  //   const users = await systemUsersAPI.getAll()
-  //   this.setState({users});
-  //   console.log(users)
-  // };
+
 
 
 

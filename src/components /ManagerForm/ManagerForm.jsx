@@ -63,7 +63,7 @@ class ManagerForm extends Component {
                 </div>
                 <div>
                   <button disabled={this.isFormInvalid()}>Sign Up</button>
-                  <Link id='signupCancel' to='/admin'>Cancel</Link>
+                  <Link id='signupCancel' to='/manager/login'>Cancel</Link>
                 </div>
             </form>
           </div>
