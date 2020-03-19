@@ -50,7 +50,10 @@ class App extends Component {
 
 
 
-
+  managerLogout = () => {
+    managerService.logout();
+    this.setState({manager:null});
+  }
 
   handleLogout = () => {
     userService.logout();
